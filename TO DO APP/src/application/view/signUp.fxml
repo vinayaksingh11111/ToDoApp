@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="600.0"
+	xmlns="http://javafx.com/javafx/11.0.1"
+	xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="application.Controller.signUpController">
+	<children>
+		<AnchorPane prefHeight="72.0" prefWidth="600.0"
+			style="-fx-background-color: #e53935;">
+			<children>
+				<Label layoutX="239.0" layoutY="19.0" text="SIGN UP">
+					<font>
+						<Font name="Arial Rounded MT Bold" size="29.0" />
+					</font>
+				</Label>
+			</children>
+		</AnchorPane>
+		<JFXTextField fx:id="firstName" layoutX="204.0"
+			layoutY="137.0" prefHeight="23.0" prefWidth="237.0"
+			promptText="First Name">
+			<font>
+				<Font name="Century Gothic" size="12.0" />
+			</font>
+		</JFXTextField>
+		<JFXTextField fx:id="lastName" layoutX="204.0"
+			layoutY="178.0" prefHeight="23.0" prefWidth="237.0"
+			promptText="Last Name">
+			<font>
+				<Font name="Century Gothic" size="12.0" />
+			</font>
+		</JFXTextField>
+		<JFXTextField fx:id="userName" layoutX="204.0"
+			layoutY="226.0" prefHeight="23.0" prefWidth="237.0"
+			promptText="Username">
+			<font>
+				<Font name="Century Gothic" size="12.0" />
+			</font>
+		</JFXTextField>
+		<JFXTextField fx:id="locationField" layoutX="204.0"
+			layoutY="360.0" prefHeight="23.0" prefWidth="237.0"
+			promptText="Location">
+			<font>
+				<Font name="Century Gothic" size="12.0" />
+			</font>
+		</JFXTextField>
+		<JFXPasswordField fx:id="password" layoutX="204.0"
+			layoutY="278.0" prefHeight="25.0" prefWidth="237.0"
+			promptText="Password" />
+		<JFXCheckBox fx:id="maleBox" layoutX="246.0"
+			layoutY="329.0" text="Male">
+			<font>
+				<Font name="Century Gothic" size="12.0" />
+			</font>
+		</JFXCheckBox>
+		<JFXCheckBox fx:id="femaleBox" layoutX="341.0"
+			layoutY="329.0" text="Female">
+			<font>
+				<Font name="Century Gothic" size="12.0" />
+			</font>
+		</JFXCheckBox>
+		<JFXButton fx:id="signUpButton" layoutX="245.0"
+			layoutY="414.0" prefHeight="34.0" prefWidth="155.0"
+			style="-fx-background-color: #A9A9A9;" text="Sign Up"
+			textFill="#f7f4f4">
+			<font>
+				<Font name="Bookman Old Style Bold" size="18.0" />
+			</font>
+		</JFXButton>
+	</children>
+</AnchorPane>

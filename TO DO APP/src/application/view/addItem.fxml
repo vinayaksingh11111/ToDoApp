@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="450.0" prefWidth="600.0"
+	xmlns="http://javafx.com/javafx/11.0.1"
+	xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="application.Controller.addItemController">
+	<children>
+		<AnchorPane prefHeight="69.0" prefWidth="600.0"
+			style="-fx-background-color: #707070;">
+			<children>
+				<Label layoutX="256.0" layoutY="13.0" text="2-DO"
+					textFill="#fef9f9">
+					<font>
+						<Font name="Arial Rounded MT Bold" size="36.0" />
+					</font>
+				</Label>
+			</children>
+		</AnchorPane>
+		<JFXTextField fx:id="taskField" layoutX="140.0"
+			layoutY="148.0" prefHeight="26.0" prefWidth="322.0" promptText="TASK">
+			<font>
+				<Font name="Copperplate Gothic Bold" size="14.0" />
+			</font>
+		</JFXTextField>
+		<JFXTextArea fx:id="descriptionField" layoutX="140.0"
+			layoutY="200.0" prefHeight="149.0" prefWidth="322.0"
+			promptText="DESCRIPTION">
+			<font>
+				<Font name="Bookman Old Style Bold" size="14.0" />
+			</font>
+		</JFXTextArea>
+		<JFXButton fx:id="saveTaskButton" layoutX="227.0"
+			layoutY="379.0" prefHeight="40.0" prefWidth="152.0"
+			style="-fx-background-color: #ff5722;" text="SAVE TASK"
+			textFill="#fffdfd">
+			<font>
+				<Font name="Britannic Bold" size="24.0" />
+			</font>
+		</JFXButton>
+		<JFXButton fx:id="myTask" layoutX="474.0" layoutY="407.0"
+			style="-fx-background-color: #ff5722;" text="MY TASKS"
+			textFill="#f9f4f4" visible="false">
+			<font>
+				<Font name="Britannic Bold" size="14.0" />
+			</font>
+		</JFXButton>
+		<Label fx:id="done" layoutX="207.0" layoutY="425.0"
+			prefHeight="17.0" prefWidth="211.0" text="TASK ADDED SUCCESSFULLY"
+			visible="false">
+			<font>
+				<Font name="Arial" size="13.0" />
+			</font>
+		</Label>
+		<JFXButton fx:id="myTask" layoutX="404.0" layoutY="395.0"
+			prefHeight="32.0" prefWidth="174.0"
+			style="-fx-background-color: #ff5722;" text="MY TASKS"
+			textFill="#f5f0f0" visible="false">
+			<font>
+				<Font name="Britannic Bold" size="14.0" />
+			</font>
+		</JFXButton>
+	</children>
+</AnchorPane>
